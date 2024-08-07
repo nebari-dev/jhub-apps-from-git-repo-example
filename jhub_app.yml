@@ -1,0 +1,14 @@
+## jhub_app.yml
+name: My Panel App
+description: This is a panel app
+framework: panel
+# software_environment: environment.yml # relative path from git repository root
+filepath: panel_app.py # relative path from git repository root
+# non critical environment variables
+# critical ones can be added from the UI
+environment:
+  SOMETHING_FOO: bar
+  SOMETHING_BAR: beta
+keep_alive: false
+public: false
+thumbnail: thumbnail.jpg # relative path from git repository root
