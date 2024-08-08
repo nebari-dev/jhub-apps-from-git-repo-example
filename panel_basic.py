@@ -22,7 +22,7 @@ def test_panel_app():
     """
     slider = pn.widgets.FloatSlider(name="Slider")
     return pn.template.FastListTemplate(
-        title="Panel Test App", sidebar=[slider], main=[slider.param.value]
+        title="Panel Test App from Git Repository", sidebar=[slider], main=[slider.param.value]
     ).servable()
 
 
