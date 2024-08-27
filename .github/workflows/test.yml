@@ -23,3 +23,13 @@ jobs:
           python=3.11
           conda-project
           -c conda-forge
+    - name: Install conda-project
+      run: conda project install
+    - name: Run conda-project
+      run: |
+        conda project run >> logs.txt
+        sleep 5
+        cat logs.txt
+    - name: Check Panel app running
+      run: |
+        curl http://127.0.0.1:5000
