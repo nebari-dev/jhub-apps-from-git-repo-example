@@ -36,7 +36,7 @@ jobs:
     - name: Run conda-project
       run: |
         conda project run > logs.txt 2>&1 &
-        sleep 5
+        sleep 10
         cat logs.txt
     - name: Check Panel app running
       run: |
