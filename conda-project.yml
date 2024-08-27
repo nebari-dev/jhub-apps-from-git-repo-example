@@ -11,8 +11,10 @@ variables:
   JHUB_APP_CONFIG_keep_alive: false
   JHUB_APP_CONFIG_public: false
   JHUB_APP_CONFIG_thumbnail_path: panel.png
+  # actual environment variables to be used in the deployment of jhub apps application
   SOMETHING_FOO: bar
   SOMETHING_BAR: beta
 
 commands:
+  # command to run the app locally
   run-app: python -m bokeh_root_cmd.main panel_basic.py --port 5000 --allow-websocket-origin=127.0.0.1:5000 --server=panel
