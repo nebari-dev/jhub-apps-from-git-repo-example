@@ -1,0 +1,18 @@
+name: jhub-apps-from-git-repo-example
+environments:
+  default:
+    - environment.yml
+
+variables:
+  # variables that are specific to jhub-apps
+  JHUB_APP_CONFIG_description: This is a panel app created from git repository
+  JHUB_APP_CONFIG_framework: panel
+  JHUB_APP_CONFIG_filepath: panel_basic.py
+  JHUB_APP_CONFIG_keep_alive: false
+  JHUB_APP_CONFIG_public: false
+  JHUB_APP_CONFIG_thumbnail_path: panel.png
+  SOMETHING_FOO: bar
+  SOMETHING_BAR: beta
+
+commands:
+  run-app: python -m bokeh_root_cmd.main panel_basic.py --port 5000 --allow-websocket-origin=127.0.0.1:5000 --server=panel

@@ -1,0 +1,14 @@
+name: default
+channels:
+  - conda-forge
+dependencies:
+  - panel
+  - jhsingle-native-proxy
+  - bokeh-root-cmd
+variables:
+prefix:
+platforms:
+  - osx-arm64
+  - linux-64
+  - win-64
+  - osx-64

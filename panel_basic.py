@@ -27,4 +27,5 @@ def test_panel_app():
 
 
 if __name__.startswith("bokeh"):
+    print("Starting Panel Application")
     test_panel_app()
