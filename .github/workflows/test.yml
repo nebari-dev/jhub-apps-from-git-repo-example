@@ -23,11 +23,19 @@ jobs:
           python=3.11
           conda-project
           -c conda-forge
+    - name: conda info and list
+      run: |
+        conda info
+        conda list
     - name: Install conda-project
       run: conda project install
+    - name: conda info and list for conda project environment
+      run: |
+        conda project run conda info
+        conda project run conda list
     - name: Run conda-project
       run: |
-        conda project run >> logs.txt
+        conda project run > logs.txt 2>&1 &
         sleep 5
         cat logs.txt
     - name: Check Panel app running
