@@ -1,0 +1,24 @@
+name: Test
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -el {0}
+    steps:
+    - uses: actions/checkout@v4.1.1
+
+    - name: Setup Python
+      uses: mamba-org/setup-micromamba@v1.8.1
+      with:
+        create-args: >-
+          python=${{ matrix.python-version }}
+          conda-project
+          -c conda-forge
