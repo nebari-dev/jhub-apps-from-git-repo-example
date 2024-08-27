@@ -18,7 +18,8 @@ jobs:
     - name: Setup Python
       uses: mamba-org/setup-micromamba@v1.8.1
       with:
+        environment-name: test
         create-args: >-
-          python=${{ matrix.python-version }}
+          python=3.11
           conda-project
           -c conda-forge
