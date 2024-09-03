@@ -5,7 +5,7 @@ environments:
 
 variables:
   # variables that are specific to jhub-apps
-  JHUB_APP_CONFIG_name: My Awesome Panel App
+  JHUB_APP_CONFIG_name: My Panel App (Git)
   JHUB_APP_CONFIG_description: This is a panel app created from git repository
   JHUB_APP_CONFIG_framework: panel
   JHUB_APP_CONFIG_filepath: panel_basic.py
