@@ -5,16 +5,17 @@ environments:
 
 variables:
   # variables that are specific to jhub-apps
-  JHUB_APP_CONFIG_display_name: My Panel App (Git)
-  JHUB_APP_CONFIG_description: This is a panel app created from git repository
+  JHUB_APP_CONFIG_display_name: My Panel App (Git) - Test branch
+  JHUB_APP_CONFIG_description: This is a panel app created from git repository in test branch
   JHUB_APP_CONFIG_framework: panel
   JHUB_APP_CONFIG_filepath: panel_basic.py
-  JHUB_APP_CONFIG_keep_alive: false
-  JHUB_APP_CONFIG_public: false
+  JHUB_APP_CONFIG_keep_alive: true
+  JHUB_APP_CONFIG_public: true
   JHUB_APP_CONFIG_thumbnail_path: panel.png
   # actual environment variables to be used in the deployment of jhub apps application
   SOMETHING_FOO: bar
   SOMETHING_BAR: beta
+  AWESOME_ENV_VAR: awesome-value
 
 commands:
   # command to run the app locally
