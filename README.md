@@ -17,7 +17,7 @@ conda project install
 conda project run
 ```
 
-Now got to http://127.0.0.1:5000 to see the panel app in action.
+Now go to http://127.0.0.1:5000 to see the panel app in action.
 
 
 ## Configuration file (`.conda-project.yml`)
